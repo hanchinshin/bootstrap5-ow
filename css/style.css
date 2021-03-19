@@ -144,7 +144,7 @@ p {
 #news-cards {
   background-color: #fff;
   padding-top: 3%;
-  padding-bottom: 3%;
+  padding-bottom: 200px;
 }
 
 #dyk {
@@ -157,6 +157,11 @@ p {
   margin-top: -300px;
 }
 
+.with-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
 
 /*--Buy--*/
 #buy {
@@ -167,7 +172,13 @@ p {
   justify-content: center;
   align-items: center;
 }
-
+#buy p{
+  font-size: 22px;
+}
+.buy-ow-row{
+  margin-top: -220px;
+  padding-bottom: 40px;
+}
 
 /*--Footer--*/
 .punch-kid-row {
@@ -177,6 +188,32 @@ p {
 
 .copyright-row span{
   color: #fff;
+}
+
+.footer-btn{
+  background-color: white;
+  border-style: solid;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  border-width: 2px;
+  border-color: white;
+}
+
+.footer-btn:hover{
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  color: #fff;
+}
+
+.form-label {
+  font-size: 20px;
+}
+.form-control{
+  border-radius: 0;
+  padding: 20px;
 }
 
 
