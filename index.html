@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/ow-fav-icon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <title>Play OverWatch</title>
+  </head>
+<body>
+<!--Nav-->
+
+<nav class="navbar navbar-expand-lg navbar-dark container py-2 bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="images/ow-logo-white.png" width="200px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon text-light"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">OW League</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Heros</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn nav-btn btn-outline-primary">Learn More</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Hero-->
+<section id="home">
+  <video autoplay="" muted="" loop="">
+    <source src="images/ow-vid.mp4" type="video/mp4">
+  </video>
+  <div class="container">
+    <div class="row">
+      <div class="home-text">
+        <img class="home-img" src="images/ow-logo-home-white.png" width="500px">
+        <h1>The World Needs Heros</h1>
+        <h3>Overwatch is a team-based multiplayer first-person shooter developed and published by Blizzard Entertainment.</h3>
+          <a href="#">
+            <button class="btn btn-lg btn-outline-primary hero-btn">View Heroes</button>
+          </a>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</section>
+
+<!--Dyk-->
+<section id="dyk">
+  <div class="container py-5">
+    <h2 class="p-3">Do you know?</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div>
+        <div class="card-body dyk-card">
+          <h3>There are 32 playable heroes in Overwatch</h3>
+          <p class="card-text">Dummy Text, TBD. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias.</p>
+          <a href="#" class="btn btn-primary">Link to Heros Page</a>
+        </div>
+      </div>
+      <div>
+        <img src="./images/ow-dva2.png" alt="dva" class="dva-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--News-->
+<section id="news-cards">
+  <div class="container py-5">
+  <h2 class="p-3">OverWatch News</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./images/winston-overwatch-combo-eliminate-team.jpg" class="card-img-top" alt="winston">
+        <div class="card-body">
+          <h5 class="card-title">Chinese Overwatch player shows off ridiculous Winston instant kill combo.</h5>
+          <hr>
+          <p class="card-text">Being able to quickly secure frags can be key to winning matches in Overwatch by giving your team a man advantage. With Winston, the gorilla-turned-scientist may not seem capable of instant kills, but one combo proves he has it in him. Chinese Overwatch player shows off ridiculous Winston instant kill combo...</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 1 hour ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./images/news-ow2.jpg" class="card-img-top" alt="ow2">
+        <div class="card-body">
+          <h5 class="card-title">Overwatch 2 release date, news, rumors, modes and trailers</h5>
+          <hr>
+          <p class="card-text">After seemingly endless speculation, Overwatch 2 was announced at BlizzCon 2019 and it's now one of the most hotly-anticipated games around. The sequel to Blizzard’s team-based shooter was revealed by creative director Jeff Kaplan at the annual extravaganza, accompanied by an emotional cinematic trailer (which you can find below)...</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 hours ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./images/owl-news.png" class="card-img-top" alt="owl-news">
+        <div class="card-body">
+          <h5 class="card-title">Breaking Down the 2021 Overwatch League Schedule</h5>
+          <hr>
+          <p class="card-text">The 2021 Overwatch League season schedule was revealed on Saturday, along with a format that comprises four tournament cycles and plenty of cross-region play. Like last season, teams will play three weeks of regional qualifying matches to determine tournament qualification and seeding, but this year—conditions permitting—teams from both regions will have a chance to fight head-to-head for each tournament title...</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 16 hours ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!--Carousel-->
+<section id="carousel">
+
+
+</section>
+
+<!--Additional Section-->
+
+<!--Buy-->
+<section id="buy">
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <img src="./images/buy-ow.png" alt="buy ow" width="200px">
+      <h3>Get Your Copy of Overwatch, Today!</h3>
+      <h3>What are you waiting for?</h3>
+    </div>
+    <div class="col-6">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">
+        <button class="btn btn-primary">Subscribe to Our Newsletter</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--Footer-->
+<footer class="bg-light text-center text-lg-start">
+  <div class="container p-4">
+    <div class="row punch-kid-row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0"><img src="images/that-punch-kid.png" atl="that-punch-kid" width="200px"></div>
+      
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Play OverWatch</h5>
+        <p>
+          Dummy Text, TBD. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias.
+        </p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Footer Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-dark">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 4</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<footer class="bg-dark text-center text-lg-start">
+<!-- Copyright -->
+<div class="text-center p-3 copyright-row">
+  <span>© 2021 Copyright: </span><a class="text-light" href="">Blizzard OverWatch</a>
+</div>
+</footer>
+<!-- Copyright -->
+
+
+<!--Javascript-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+</script>
+</body>
+</html>
