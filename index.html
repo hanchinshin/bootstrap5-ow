@@ -12,27 +12,27 @@
     <title>Play OverWatch</title>
   </head>
 <body>
-<!--Nav-->
 
+<!--Nav-->
 <nav class="navbar navbar-expand-lg navbar-dark container py-2 bg-dark fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="images/ow-logo-white.png" width="200px"></a>
+    <a class="navbar-brand" href="index.html"><img src="images/ow-logo-white.png" width="200px"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon text-light"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto text-center">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
+          <a class="nav-link" href="news.html">News</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">OW League</a>
+          <a class="nav-link" href="ow-league.html">OW League</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Heros</a>
+          <a class="nav-link" href="heroes.html">Heroes</a>
         </li>
         <li class="nav-item">
           <a href="#dyk">
@@ -74,7 +74,7 @@
           <p>In Overwatch,heroes are controlled using a mouse and keyboard. Every hero has a unique weapon. Some heroes have multiple weapons, which can be switched using 1 and 2. Abilities are normally keyed to Shift, E, and Q (the ultimate ability). Heroes have 150 to 600 HP and move at a base speed of 5.5 m/s (except Genji and Tracer, whose base speed is 6 m/s). Walking backwards reduces this speed by 10%. Crouching makes their speed 3 m/s (in every direction). Also, all heroes can jump at a height of 0.98 m.</p>
           <p>Heroes exchange specific dialogue with each other based on their character history during matches and background.</p>
           <p>Each hero offers a unique style of play, and is classified under one of three roles: Tank, Damage, or Support. Each team can only have 1 of each hero, although some Arcade game modes allow multiple. Players can switch heroes in the spawn room.</p>
-          <a href="#">
+          <a href="heroes.html">
             <button class="btn btn-lg btn-outline-primary hero-btn">Check Out All Heroes</button>
           </a>
         </div>
@@ -86,10 +86,50 @@
   </div>
 </section>
 
+<!--OW League-->
+<section id="owl">
+  <div class="container py-5">
+  <h2 class="px-3 text-center">Overwatch League</h2>
+  <br>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 text-light text-center">
+      <div class="col owl-card owl-card-1">
+      </div>
+      <div class="col owl-card owl-card-2">
+      </div>
+      <div class="col owl-card owl-card-3">
+      </div>
+      <div class="col owl-card owl-card-4">
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 text-light text-center">
+      <div class="col owl-card owl-card-5">
+      </div>
+      <div class="col owl-card owl-card-6">
+      </div>
+      <div class="col owl-card owl-card-7">
+      </div>
+      <div class="col owl-card owl-card-8">
+      </div>
+    </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+    </div>
+    <div class="col with-btn">
+      <a href="ow-league.html">
+        <button class="btn btn-lg btn-outline-primary hero-btn">Learn More</button>
+      </a>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+  </div>
+</section>
+
 <!--News-->
 <section id="news-cards">
-  <div class="container py-5">
-  <h2 class="px-3">OverWatch News</h2>
+  <div class="container">
+  <h2 class="px-3">Overwatch News</h2>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card h-100">
@@ -153,18 +193,16 @@
 
 </section>
 
-<!--Additional Section-->
-
 <!--Buy-->
 <section id="buy">
 <div class="container">
   <div class="row buy-ow-row">
-    <div class="col-lg-6 col-md-12 mb-4 mb-md-0"><img src="./images/buy-ow.png" alt="buy ow" width="400px"></div>
+    <div class="col-lg-6 col-md-12 mb-4 mb-md-0"><img src="./images/buy-ow.png" alt="buy ow" width="300px"></div>
   </div>
   <div class="row">
     <div class="col-6">
       <h3>Get Your Copy of Overwatch, Today!</h3>
-      <p>Besides, don't forget to sign up for our weekly newsletter</p>
+      <p>Don't forget to sign up for our weekly newsletter</p>
     </div>
     <div class="col-6">
       <div class="mb-3">
@@ -179,6 +217,7 @@
   </div>
 </div>
 </section>
+
 
 <!--Footer-->
 <footer class="bg-light text-center text-lg-start">
@@ -237,8 +276,6 @@
   <span>© 2021 Copyright: </span><a class="text-light" href="">Blizzard OverWatch</a>
 </div>
 </footer>
-<!-- Copyright -->
-
 
 <!--Javascript-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>

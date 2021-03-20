@@ -74,6 +74,11 @@ p {
   border-width: 2px;
 }
 
+.nav-btn{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 /*--Home--*/
 #home {
   display: flex;
@@ -83,7 +88,7 @@ p {
 }
 
 #home video {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   min-height: 100%;
@@ -140,11 +145,191 @@ p {
   color: #FA9C1D;
 }
 
+
+/*--OW League--*/
+#owl {
+  margin: 100px 0px;
+}
+
+#owl .owl-card-1{
+  background-image:url('../images/owl/OWL_AtlantaReign_Logo_Primary_LTGRAY.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #c4c4c4;
+}
+
+#owl .owl-card-2{
+  background-image:url('../images/owl/OWL_BostonUprising_Logo__1C_WHITE.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #174b97;
+}
+
+#owl .owl-card-3{
+  background-image:url('../images/owl/OWL_ChengduHunters_Logo_Primary_ORANGE.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #FFA000;
+}
+
+#owl .owl-card-4{
+  background-image:url('../images/owl/OWL_DallasFuel_Logo__DKBLUE_BKGD_BCST.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #032340;
+}
+
+#owl .owl-card-5{
+  background-image:url('../images/owl/OWL_FloridaMayhem_Logo_2020_FUCHSIA_BKGD-01.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #cf4691;
+}
+
+#owl .owl-card-6{
+  background-image:url('../images/owl/OWL_GuangzhouCharge_Logo_Primary_DKBLUE.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #122c42;
+}
+
+#owl .owl-card-7{
+  background-image:url('../images/owl/OWL_HangzhouSpark_DIGITAL_Logo_Primary_PINK.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #fb7299;
+}
+
+#owl .owl-card-8{
+  background-image:url('../images/owl/OWL_HoustonOutlaws_Logo__BLACK_BKGD.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #000;
+}
+
+#owl .owl-card-9{
+  background-image:url('../images/owl/OWL_LondonSpitfire_Logo__LTBLUE_BKGD_BCST.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #59cbe8;
+}
+
+#owl .owl-card-10{
+  background-image:url('../images/owl/OWL_LAGladiators_Logo__PURPLE_BKGD.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #3c1053;
+}
+
+#owl .owl-card-11{
+  background-image:url('../images/owl/OWL_LAValiant_Logo_2020_YELLOW_BKGD-01.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #f0d229;
+}
+
+#owl .owl-card-12{
+  background-image:url('../images/owl/OWL_NewYorkExcelsior_Logo__DKBLUE_BKGD.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #171c38;
+}
+
+#owl .owl-card-13{
+  background-image:url('../images/owl/OWL_ParisEternal_Logo_Primary_WHITE.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #cf4691;
+}
+
+#owl .owl-card-14{
+  background-image:url('../images/owl/OWL_PhiladelphiaFusion_Logo__BLACK_BKGD.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #000;
+}
+
+#owl .owl-card-15{
+  background-image:url('../images/owl/OWL_SFShock_Icon_1C_BLACK-01-01.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #f24a00;
+}
+
+#owl .owl-card-16{
+  background-image:url('../images/owl/OWL_SeoulDynasty_Logo__GOLD_BKGD.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #a78600;
+}
+
+#owl .owl-card-17{
+  background-image:url('../images/owl/OWL_ShanghaiDragons_Logo__YELLOW_BKGD.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #fcff00;
+}
+
+#owl .owl-card-18{
+  background-image:url('../images/owl/OWL_TorontoDefiant_Logo_Primary_GRAY.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #707d80;
+}
+
+#owl .owl-card-19{
+  background-image:url('../images/owl/OWL_VancouverTitans_Logo_Primary_BLUE.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #09226B;
+}
+
+#owl .owl-card-20{
+  background-image:url('../images/owl/OWL_WashingtonJustice_Logo_Primary_RED.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #990034;
+}
+
+#owl .owl-card {
+  padding: 140px 100px;
+}
+
+#owl .owl-card:hover {
+  background-size: cover;
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
+}
+
+
+
+
 /*--News--*/
 #news-cards {
   background-color: #fff;
   padding-top: 3%;
-  padding-bottom: 200px;
+  padding-bottom: 5%;
+  margin-bottom: 150px;
 }
 
 #dyk {
@@ -165,6 +350,7 @@ p {
 
 /*--Buy--*/
 #buy {
+  margin-top: 5%;
   padding-top: 3%;
   padding-bottom: 5%;
   background-color: #FA9C1D;
@@ -176,8 +362,13 @@ p {
   font-size: 22px;
 }
 .buy-ow-row{
-  margin-top: -220px;
-  padding-bottom: 40px;
+  margin-top: -200px;
+  padding-bottom: 30px;
+}
+
+.buy-ow-row img{
+  z-index: 1;
+  filter: drop-shadow(0 0 0.95rem #fa9a1daf);
 }
 
 /*--Footer--*/
@@ -216,6 +407,26 @@ p {
   padding: 20px;
 }
 
+/*--Heroes--*/
+#heroes-home{
+  background-color: #dfdddd;
+  height: 90vh;
+  background-image: url('../images/ow-heroes.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+#ow-heroes {
+  height: 80vh;
+}
+
+
+#owl-slider .carousel-inner{
+  height: 80vh;
+  
+}
 
 /*--Break Points--*/
 /* Extra small devices (phones, 600px and down) */
@@ -240,6 +451,10 @@ p {
     margin-top: 0px;
     width: 100%;
   }
+  .buy-ow-row{
+    margin-top: -120px;
+    padding-bottom: 30px;
+  }
 }
 
 
@@ -249,6 +464,10 @@ p {
     margin-top: 0px;
     width: 100%;
   }
+  .buy-ow-row{
+    margin-top: -80px;
+    padding-bottom: 30px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -257,6 +476,7 @@ p {
     margin-top: -200px;
     width: 100%;
   }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -264,6 +484,10 @@ p {
   #dyk .dva-img{
     margin-top: -300px;
     width: 130%;
+  }
+  .buy-ow-row{
+    margin-top: -200px;
+    padding-bottom: 30px;
   }
 }
 
