@@ -2,21 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="images/ow-fav-icon.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
-    <title>Play OverWatch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <title>Play Overwatch</title>
   </head>
 <body>
 
 <!--Nav-->
 <nav class="navbar navbar-expand-lg navbar-dark container py-2 bg-dark fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img src="images/ow-logo-white.png" width="200px"></a>
+    <a class="navbar-brand" href="index.html"><img src="images/ow-logo-white.png" width="200px" alt="ow-nav-logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon text-light"></span>
     </button>
@@ -52,7 +53,7 @@
   <div class="container">
     <div class="row">
       <div class="home-text">
-        <img class="home-img" src="images/ow-logo-home-white.png" width="500px">
+        <img class="home-img" src="images/ow-logo-home-white.png" width="500px" alt="ow-hero-logo">
         <h1>The World Needs Heros</h1>
         <h3>Overwatch is a team-based multiplayer first-person shooter developed and published by Blizzard Entertainment.</h3>
           <a href="#dyk">
@@ -195,35 +196,35 @@
 
 <!--Buy-->
 <section id="buy">
-<div class="container">
-  <div class="row buy-ow-row">
-    <div class="col-lg-6 col-md-12 mb-4 mb-md-0"><img src="./images/buy-ow.png" alt="buy ow" width="300px"></div>
-  </div>
-  <div class="row">
-    <div class="col-6">
-      <h3>Get Your Copy of Overwatch, Today!</h3>
-      <p>Don't forget to sign up for our weekly newsletter</p>
+  <div class="container">
+    <div class="row buy-ow-row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0"><img src="./images/buy-ow.png" alt="buy-ow" width="300px"></div>
     </div>
-    <div class="col-6">
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Please Enter Your Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h3>Get Your Copy of Overwatch, Today!</h3>
+        <p>Don't forget to sign up for our weekly newsletter</p>
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">
-          <button class="btn footer-btn btn-outline-primary">Subscribe</button>
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <span id="emailHelp">We'll never share your email with anyone else.</span>
+          </div>
+          <button type="submit" class="btn footer-btn btn-outline-primary">Submit</button>
+        </form>
       </div>
     </div>
   </div>
-</div>
 </section>
 
-
 <!--Footer-->
+<section id="footer">
 <footer class="bg-light text-center text-lg-start">
   <div class="container p-4">
     <div class="row punch-kid-row">
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0"><img src="images/that-punch-kid.png" atl="that-punch-kid" width="200px"></div>
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0"><img src="images/that-punch-kid.png" alt="that-punch-kid" width="200px"></div>
     </div>
     <div class="row">
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
@@ -234,48 +235,36 @@
       </div>
       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
         <h5 class="text-uppercase">Footer Links</h5>
-
         <ul class="list-unstyled mb-0">
+          <br>
           <li>
-            <a href="#!" class="text-dark">Link 1</a>
-          </li>
-          <li>
-            <a href="#!" class="text-dark">Link 2</a>
-          </li>
-          <li>
-            <a href="#!" class="text-dark">Link 3</a>
-          </li>
-          <li>
-            <a href="#!" class="text-dark">Link 4</a>
+            <p>Add Link Later</p>
+            <p>Add Link Later</p>
+            <p>Add Link Later</p>
           </li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
         <h5 class="text-uppercase mb-0">Footer Links</h5>
-
-        <ul class="list-unstyled">
+        <ul class="list-unstyled mb-0">
+          <br>
           <li>
-            <a href="#!" class="text-dark">Link 1</a>
-          </li>
-          <li>
-            <a href="#!" class="text-dark">Link 2</a>
-          </li>
-          <li>
-            <a href="#!" class="text-dark">Link 3</a>
-          </li>
-          <li>
-            <a href="#!" class="text-dark">Link 4</a>
+            <p>Add Link Later</p>
+            <p>Add Link Later</p>
+            <p>Add Link Later</p>
           </li>
         </ul>
       </div>
     </div>
   </div>
 <footer class="bg-dark text-center text-lg-start">
+</section>
 <!-- Copyright -->
-<div class="text-center p-3 copyright-row">
+<div class="text-center p-3 copyright-row bg-dark">
   <span>© 2021 Copyright: </span><a class="text-light" href="">Blizzard OverWatch</a>
 </div>
 </footer>
+
 
 <!--Javascript-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>

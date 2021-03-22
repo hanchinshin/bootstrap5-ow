@@ -2,20 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="images/ow-fav-icon.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
-    <title>Play OverWatch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <title>OverWatch Heroes</title>
   </head>
 <body>
+
 <!--Nav-->
 <nav class="navbar navbar-expand-lg navbar-dark container py-2 bg-dark fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img src="images/ow-logo-white.png" width="200px"></a>
+    <a class="navbar-brand" href="index.html"><img src="images/ow-logo-white.png" width="200px" alt="ow-nav-logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon text-light"></span>
     </button>
@@ -34,7 +36,7 @@
           <a class="nav-link active" href="heroes.html">Heroes</a>
         </li>
         <li class="nav-item">
-          <a href="#dyk">
+          <a href="#">
           <button class="btn nav-btn btn-outline-primary">Learn More</button>
           </a>
         </li>
@@ -44,102 +46,625 @@
 </nav>
 
 <!--Heroes Hero-->
-<section id="heroes-home">
+<section id="heroes-hero">
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center text-light">Overwatch Heroes</h1>
+      </div>
+    </div>
+</section>
+
+<!--Heroes Content-->
+<section id="hero-types">
+<div class="container">
+  <div class="row row-cols-lg-3 row-cols-sm-1">
+    <div class="col-sm text-center">
+      <i class="bi bi-shield-fill-plus"></i>
+      <h2>TANK</h2>
+      <p>Overwatch features an international cast of powerful heroes with captivating personalities and backstories. Explore the full roster below.</p>
+      <a href="#tank-heroes"><button class="btn footer-btn btn-outline-primary">View All</button></a>
+    </div>
+    <div class="col-sm text-center">
+      <i class="bi bi-capslock-fill"></i>
+      <h2>DAMAGE</h2>
+      <p>Overwatch features an international cast of powerful heroes with captivating personalities and backstories. Explore the full roster below.</p>
+      <a href="#damage-heroes"><button class="btn footer-btn btn-outline-primary">View All</button></a>
+    </div>
+    <div class="col-sm text-center">
+      <i class="bi bi-heart-fill"></i>
+      <h2>SUPPORT</h2>
+      <p>Overwatch features an international cast of powerful heroes with captivating personalities and backstories. Explore the full roster below.</p>
+      <a href="#support-heroes"><button class="btn footer-btn btn-outline-primary">View All</button></a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!---Tank Heroes-->
+<section id="tank-heroes">
+  <h2 class="text-center">Overwatch Tank Heroes</h2>
   <div class="container">
     <div class="row">
+    <!--Heroes Cards-->
+      <div class="row row-cols-2 row-cols-lg-5 row-cols-md-3">
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/dva.png" class="card-img-top" alt="d.va">
+            <div class="card-body">
+              <i class="bi bi-shield-fill-plus"></i>
+              <h5 class="card-title">D.va</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 400</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Armor 200</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/roadhog.png" class="card-img-top" alt="Roadhog">
+            <div class="card-body">
+              <i class="bi bi-shield-fill-plus"></i>
+              <h5 class="card-title">Roadhog</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 600</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/zarya.png" class="card-img-top" alt="Zarya">
+            <div class="card-body">
+              <i class="bi bi-shield-fill-plus"></i>
+              <h5 class="card-title">Zarya</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Shield 200</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/sigma.png" class="card-img-top" alt="Sigma">
+            <div class="card-body">
+              <i class="bi bi-shield-fill-plus"></i>
+              <h5 class="card-title">Sigma</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Health 400</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 100%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Shield 500</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/Wrecking-Ball.png" class="card-img-top" alt="Wrecking-Ball">
+            <div class="card-body">
+              <i class="bi bi-shield-fill-plus"></i>
+              <h5 class="card-title">Wrecking Ball</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 500</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Armor 100</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/winston.png" class="card-img-top" alt="winston">
+            <div class="card-body">
+              <i class="bi bi-shield-fill-plus"></i>
+              <h5 class="card-title">Winston</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 400</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Armor 100</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/orisa.png" class="card-img-top" alt="orisa">
+            <div class="card-body">
+              <i class="bi bi-shield-fill-plus"></i>
+              <h5 class="card-title">Orisa</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Armor 200</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/reinhardt.png" class="card-img-top" alt="reinhardt">
+            <div class="card-body">
+              <i class="bi bi-shield-fill-plus"></i>
+              <h5 class="card-title">Reinhardt</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 300</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">Armor 200</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    <!--End Heroes Cards-->
     </div>
   </div>
 </section>
 
-<!--OW Heros-->
-<section id="ow-heroes">
+<!---Damage Heroes-->
+<section id="damage-heroes">
+  <h2 class="text-center">Overwatch Damage Heroes</h2>
   <div class="container">
     <div class="row">
+    <!--Heroes Cards-->
+      <div class="row row-cols-2 row-cols-lg-5 row-cols-md-3">
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/ashe.png" class="card-img-top" alt="ashe">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Ashe</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/bastion.png" class="card-img-top" alt="bastion">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Bastion</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Armor 100</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/doomfist.png" class="card-img-top" alt="doomfist">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Doomfist</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 250</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/echo.png" class="card-img-top" alt="echo">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Echo</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/genji.png" class="card-img-top" alt="Genji">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Genji</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/mccree.png" class="card-img-top" alt="McCree">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">McCree</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/mei.png" class="card-img-top" alt="Mei">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Mei</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 250</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/pharah.png" class="card-img-top" alt="Pharah">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Pharah</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/reaper.png" class="card-img-top" alt="Reaper">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Reaper</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 250</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/soldier76.png" class="card-img-top" alt="Soldier:76">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Soldier:76</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/Sombra.png" class="card-img-top" alt="Sombra">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Sombra</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/symmetra.png" class="card-img-top" alt="Symmetra">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Symmetra</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 100</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Shield 100</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/hanzo.png" class="card-img-top" alt="Hanzo">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Hanzo</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/torbjorn.png" class="card-img-top" alt="Torbjorn">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Torbjorn</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/junkrat.png" class="card-img-top" alt="Junkrat">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Junkrat</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/tracer.png" class="card-img-top" alt="Tracer">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Tracer</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 150</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/widowmaker.png" class="card-img-top" alt="Widowmaker">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Widowmaker</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!--End Heroes Cards-->
     </div>
   </div>
 </section>
 
+<!---Support Heroes-->
+<section id="support-heroes">
+  <h2 class="text-center">Overwatch Support Heroes</h2>
+  <div class="container">
+    <div class="row">
+    <!--Heroes Cards-->
+      <div class="row row-cols-2 row-cols-lg-5 row-cols-md-3">
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/ana.png" class="card-img-top" alt="Ana">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Ana</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/baptist.png" class="card-img-top" alt="Baptiste">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Baptiste</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/brigtte.png" class="card-img-top" alt="Brigitte">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Brigitte</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Armor 50</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/lucio.png" class="card-img-top" alt="Lucio">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Lucio</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/mercy.png" class="card-img-top" alt="Mercy">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Mercy</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/moira.png" class="card-img-top" alt="Moira">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Moira</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Health 200</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Armor 0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/heroes/zenyatta.png" class="card-img-top" alt="Zenyatta">
+            <div class="card-body">
+              <i class="bi bi-capslock-fill"></i>
+              <h5 class="card-title">Zenyatta</h5>
+              <div class="progress">
+                <div class="progress-bar health-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Health 50</div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar armor-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Armor 150</div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+    <!--End Heroes Cards-->
+    </div>
+  </div>
+</section>
 
 <!--Buy-->
 <section id="buy">
   <div class="container">
     <div class="row buy-ow-row">
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0"><img src="./images/buy-ow.png" alt="buy ow" width="300px"></div>
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0"><img src="./images/buy-ow.png" alt="buy-ow" width="300px"></div>
     </div>
     <div class="row">
-      <div class="col-6">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
         <h3>Get Your Copy of Overwatch, Today!</h3>
         <p>Don't forget to sign up for our weekly newsletter</p>
       </div>
-      <div class="col-6">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Please Enter Your Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">
-            <button class="btn footer-btn btn-outline-primary">Subscribe</button>
-        </div>
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <span id="emailHelp">We'll never share your email with anyone else.</span>
+          </div>
+          <button type="submit" class="btn footer-btn btn-outline-primary">Submit</button>
+        </form>
       </div>
     </div>
   </div>
 </section>
 
 <!--Footer-->
-<footer class="bg-light text-center text-lg-start">
-  <div class="container p-4">
-    <div class="row punch-kid-row">
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0"><img src="images/that-punch-kid.png" atl="that-punch-kid" width="200px"></div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Play OverWatch</h5>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias.
-        </p>
+<section id="footer">
+  <footer class="bg-light text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row punch-kid-row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0"><img src="images/that-punch-kid.png" alt="that-punch-kid" width="200px"></div>
       </div>
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Footer Links</h5>
-
-        <ul class="list-unstyled mb-0">
-          <li>
-            <a href="#!" class="text-dark">Link 1</a>
-          </li>
-          <li>
-            <a href="#!" class="text-dark">Link 2</a>
-          </li>
-          <li>
-            <a href="#!" class="text-dark">Link 3</a>
-          </li>
-          <li>
-            <a href="#!" class="text-dark">Link 4</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-0">Footer Links</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!" class="text-dark">Link 1</a>
-          </li>
-          <li>
-            <a href="#!" class="text-dark">Link 2</a>
-          </li>
-          <li>
-            <a href="#!" class="text-dark">Link 3</a>
-          </li>
-          <li>
-            <a href="#!" class="text-dark">Link 4</a>
-          </li>
-        </ul>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Play OverWatch</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Footer Links</h5>
+          <ul class="list-unstyled mb-0">
+            <br>
+            <li>
+              <p>Add Link Later</p>
+              <p>Add Link Later</p>
+              <p>Add Link Later</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Footer Links</h5>
+          <ul class="list-unstyled mb-0">
+            <br>
+            <li>
+              <p>Add Link Later</p>
+              <p>Add Link Later</p>
+              <p>Add Link Later</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-<footer class="bg-dark text-center text-lg-start">
+  <footer class="bg-dark text-center text-lg-start">
+</section>
 <!-- Copyright -->
-<div class="text-center p-3 copyright-row">
+<div class="text-center p-3 copyright-row bg-dark">
   <span>© 2021 Copyright: </span><a class="text-light" href="">Blizzard OverWatch</a>
 </div>
 </footer>
