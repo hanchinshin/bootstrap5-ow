@@ -4,6 +4,7 @@ body{
   padding: 0;
   font-family: 'Play', sans-serif;
   background-color: #fff;
+  position: relative;
 }
 
 /*--Font--*/
@@ -42,6 +43,21 @@ p {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.4em;
+}
+
+/*--Skip--*/
+.skip a{
+  left: 0;
+  padding: 7px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  margin-top: -100px;
+}
+
+.skip a:focus{
+  margin-top: 10px;
 }
 
 /*--Nav--*/
@@ -156,6 +172,11 @@ header {
   color: #FA9C1D;
 }
 
+#news-cards .home-news {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  grid-gap: 20px;
+}
 
 /*--OW League--*/
 #owl {
