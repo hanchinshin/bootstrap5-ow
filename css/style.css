@@ -47,17 +47,21 @@ p {
 
 /*--Skip--*/
 .skip a{
+  background: white;
   left: 0;
   padding: 7px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
   position: absolute;
-  margin-top: -100px;
+  top: -50px;
 }
 
 .skip a:focus{
-  margin-top: 10px;
+  top: 10px;
+  border-top: 2px dashed;
+  border-bottom: 2px dashed;
+  background-color:#FA9C1D;
 }
 
 /*--Nav--*/
@@ -126,6 +130,10 @@ p {
   transition: 1s opacity;
 }
 
+#home h1, #home p{
+  color: #fff;
+}
+
 #home .overlay {
   position: absolute;
   left: 0;
@@ -138,12 +146,12 @@ p {
   z-index: -99;
 }
 
-#home{
-  text-align: center;
+.invisi {
+  font-size: 0;
 }
 
-header {
-  text-shadow: #000 .2px .1px 10px;
+#home{
+  text-align: center;
 }
 
 #home p{
@@ -181,7 +189,7 @@ header {
 /*--OW League--*/
 #owl {
   margin-top: 20px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 #owl-slider{
@@ -412,23 +420,23 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 #buy p{
   font-size: 22px;
 }
-.buy-ow-row{
-  margin-top: -200px;
-  padding-bottom: 30px;
-}
 
-.buy-ow-row img{
-  z-index: 1;
-  filter: drop-shadow(0 0 0.95rem #fa9a1daf);
+#buy label{
+  font-size: 18px;
 }
 
 /*--Footer--*/
-.punch-kid-row {
-  margin-top: -100px;
-  margin-bottom: 20px;
+
+#footer a{
+  text-decoration: none;
+}
+#footer a:hover{
+  text-decoration: underline;
+  color: #FA9C1D;
 }
 
 .copyright-row span{
@@ -464,6 +472,39 @@ header {
   padding: 10px;
 }
 
+/*--FlipCard--*/
+.scene {
+  width: 80px;
+  height: 80px;
+  perspective: 600px;
+}
+
+.flipcard {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.flipcard:hover {
+  transform: rotateY(180deg);
+}
+
+.card_face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card_back {
+  transform: rotateY(180deg);
+}
+
+
 /*--Heroes--*/
 #heroes-home{
   background-color: #dfdddd;
@@ -479,6 +520,15 @@ header {
   height: 80vh;
 }
 
+/*--parallax--*/
+#parallax {
+  height: 30vh;
+  background: url(https://static.playoverwatch.com/img/scene/candy-5d74c9b93f.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 12vh 10vh;
+}
 
 /*--News--*/
 
@@ -634,10 +684,6 @@ header {
   #dyk .dva-img{
     margin-top: -220px;
   }
-  .buy-ow-row{
-    margin-top: -120px;
-    padding-bottom: 30px;
-  }
 
   #hero-types .col-sm{
     background-color: #FFA000;
@@ -662,5 +708,25 @@ header {
   .buy-ow-row{
     margin-top: -200px;
     padding-bottom: 30px;
+  }
+}
+
+/* reduce motion */
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+
+   .card:hover {
+    transform:none;
+  }
+  /*Turn off parallax*/
+  #parallax{
+    background-attachment: initial;
   }
 }

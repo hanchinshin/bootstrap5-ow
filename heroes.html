@@ -13,8 +13,7 @@
     <title>OverWatch Heroes</title>
   </head>
 <body>
-
-<a class = "skip2home" href="#heroes-hero">Skip to Main Content</a>
+  <div class="skip"><a href="#heroes-hero">Skip to Main Content</a></div>
 
 <!--Nav-->
 <nav class="navbar navbar-expand-lg navbar-dark container py-2 bg-dark fixed-top">
@@ -85,6 +84,8 @@
   <!---Tank Heroes-->
   <section id="tank-heroes">
     <h2 class="text-center">Overwatch Tank Heroes</h2>
+    <h3 class="invisi">H3</h3>
+    <h4 class="invisi">H4</h4>
     <div class="container">
       <div class="row">
       <!--Heroes Cards-->
@@ -218,6 +219,8 @@
   <!---Damage Heroes-->
   <section id="damage-heroes">
     <h2 class="text-center">Overwatch Damage Heroes</h2>
+    <h3 class="invisi">H3</h3>
+    <h4 class="invisi">H4</h4>
     <div class="container">
       <div class="row">
       <!--Heroes Cards-->
@@ -485,6 +488,8 @@
   <!---Support Heroes-->
   <section id="support-heroes">
     <h2 class="text-center">Overwatch Support Heroes</h2>
+    <h3 class="invisi">H3</h3>
+    <h4 class="invisi">H4</h4>
     <div class="container">
       <div class="row">
       <!--Heroes Cards-->
@@ -493,7 +498,7 @@
             <div class="card">
               <img src="./images/heroes/ana.png" class="card-img-top" alt="Ana">
               <div class="card-body">
-                <i class="bi bi-capslock-fill"></i>
+                <i class="bi bi-heart-fill"></i>
                 <h5 class="card-title">Ana</h5>
                 <div class="progress">
                   <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="health-bar">Health 200</div>
@@ -508,7 +513,7 @@
             <div class="card">
               <img src="./images/heroes/baptist.png" class="card-img-top" alt="Baptiste">
               <div class="card-body">
-                <i class="bi bi-capslock-fill"></i>
+                <i class="bi bi-heart-fill"></i>
                 <h5 class="card-title">Baptiste</h5>
                 <div class="progress">
                   <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="health-bar">Health 200</div>
@@ -523,7 +528,7 @@
             <div class="card">
               <img src="./images/heroes/brigtte.png" class="card-img-top" alt="Brigitte">
               <div class="card-body">
-                <i class="bi bi-capslock-fill"></i>
+                <i class="bi bi-heart-fill"></i>
                 <h5 class="card-title">Brigitte</h5>
                 <div class="progress">
                   <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="health-bar">Health 200</div>
@@ -538,7 +543,7 @@
             <div class="card">
               <img src="./images/heroes/lucio.png" class="card-img-top" alt="Lucio">
               <div class="card-body">
-                <i class="bi bi-capslock-fill"></i>
+                <i class="bi bi-heart-fill"></i>
                 <h5 class="card-title">Lucio</h5>
                 <div class="progress">
                   <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="health-bar">Health 200</div>
@@ -553,7 +558,7 @@
             <div class="card">
               <img src="./images/heroes/mercy.png" class="card-img-top" alt="Mercy">
               <div class="card-body">
-                <i class="bi bi-capslock-fill"></i>
+                <i class="bi bi-heart-fill"></i>
                 <h5 class="card-title">Mercy</h5>
                 <div class="progress">
                   <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="health-bar">Health 200</div>
@@ -568,7 +573,7 @@
             <div class="card">
               <img src="./images/heroes/moira.png" class="card-img-top" alt="Moira">
               <div class="card-body">
-                <i class="bi bi-capslock-fill"></i>
+                <i class="bi bi-heart-fill"></i>
                 <h5 class="card-title">Moira</h5>
                 <div class="progress">
                   <div class="progress-bar health-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="health-bar">Health 200</div>
@@ -583,7 +588,7 @@
             <div class="card">
               <img src="./images/heroes/zenyatta.png" class="card-img-top" alt="Zenyatta">
               <div class="card-body">
-                <i class="bi bi-capslock-fill"></i>
+                <i class="bi bi-heart-fill"></i>
                 <h5 class="card-title">Zenyatta</h5>
                 <div class="progress">
                   <div class="progress-bar health-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" aria-label="health-bar">Health 50</div>
@@ -600,62 +605,73 @@
     </div>
   </section>
 
-  <!--Buy-->
-  <section id="buy">
-    <div class="container">
-      <div class="row buy-ow-row">
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0"><img src="./images/buy-ow.png" alt="buy-ow" width="300px"></div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h3>Get Your Copy of Overwatch, Today!</h3>
-          <p>Don't forget to sign up for our weekly newsletter</p>
+<!--Buy-->
+<section id="buy" role="none">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h3>Get Your Copy of Overwatch, Today!</h3>
+        <p>Don't forget to sign up for our weekly newsletter</p>
+        <div>
+         <img src="./images/buy-ow.png" alt="buy-ow" width="50%">
         </div>
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <span id="emailHelp">We'll never share your email with anyone else.</span>
-            </div>
-            <button type="submit" class="btn footer-btn btn-outline-primary">Submit</button>
+      </div>
+
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <div class="form-group">
+          <h3>Subscribe to our email list</h3>
+          <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xzbyzwzg" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Full Name</label>
+              <input type="text" name="name" id="full-name" placeholder="First and Last" required="" class="form-control">
+              <label for="email-address">Email Address</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" class="form-control">
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <br>
+            <button type="submit" class="btn footer-btn btn-outline-primary">Subscribe</button>
           </form>
         </div>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
+</main>
 
   <!--Footer-->
-  <section id="footer">
+  <section id="footer" role="contentinfo">
     <footer class="bg-light text-center text-lg-start">
       <div class="container p-4">
-        <div class="row punch-kid-row">
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0"><img src="images/that-punch-kid.png" alt="that-punch-kid" width="200px"></div>
-        </div>
         <div class="row">
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Play OverWatch</h5>
+            <h4 class="text-uppercase">Play OverWatch</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias.
+              ©2021 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED. All images within this demo website come from the internet.
             </p>
+            <div class="scene">
+              <div class="flipcard">
+                <div class="card_face card_front"><img src="images/Overwatch_circle_logo.svg"  width= "80px" alt="overwatch logo"></div>
+                <div class="card_face card_back"><img src="images/blizzard_logo.png"  width= "80px" alt="blizzard logo"></div>
+              </div>
+            </div>
           </div>
+
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h4 class="text-uppercase">Footer Links</h4>
+            <h4 class="text-uppercase">Quick Links</h4>
             <ul class="list-unstyled mb-0">
               <li>
-                <p>Add Link Later</p>
-                <p>Add Link Later</p>
-                <p>Add Link Later</p>
+                <a href="index.html"><p>Home</p></a>
+                <a href="heroes.html"><p>Heroes</p></a>
+                <a href="news.html"><p>News</p></a>
+                <a href="ow-league.html"><p>OW League</p></a>
               </li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-0">Footer Links</h5>
+            <h4 class="text-uppercase mb-0">Learn More</h4>
             <ul class="list-unstyled mb-0">
               <li>
-                <p>Add Link Later</p>
-                <p>Add Link Later</p>
-                <p>Add Link Later</p>
+              <a href="https://playoverwatch.com/"><p>Overwatch official Website</p></a>
+              <a href="https://www.blizzard.com/en-sg/"><p>Blizzard</p></a>
               </li>
             </ul>
           </div>
@@ -664,7 +680,7 @@
     <footer class="bg-dark text-center text-lg-start">
     <!-- Copyright -->
     <div class="text-center p-3 copyright-row bg-dark">
-      <span>© 2021 Copyright: </span><a class="text-light" href="">Blizzard OverWatch</a>
+      <span>© 2021 Copyright: </span><a class="text-light" href="">Blizzard Overwatch</a>
     </div>
     </footer>
   </section>

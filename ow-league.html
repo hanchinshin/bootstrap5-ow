@@ -14,7 +14,7 @@
   </head>
 <body>
 
-<a class = "skip2home" href="#owl-hero">Skip to Main Content</a>
+<div class="skip"><a href="#owl-hero">Skip to Main Content</a></div>
 
 <!--Nav-->
 <nav class="navbar navbar-expand-lg navbar-dark container py-2 bg-dark fixed-top">
@@ -89,6 +89,7 @@
   <!--Owl content-->
   <section id="owl">
       <div class="container py-5">
+        <h2 class="invisi">H2</h2>
       <p class="text-center">The Overwatch League™ is an international esports league comprising 20 city-based teams and featuring the best Overwatch® players in the world. The 2021 season begins on April 16 and concludes with the playoffs and Grand Finals in September. Showcasing top-tier Overwatch competition, thrilling storylines, an eye-popping prize pool, robust viewership rewards, and cutting-edge production value, the Overwatch League is the world's premier esports league.</p>
       <br>
       <div class="container">
@@ -147,61 +148,72 @@
   </section>
 
   <!--Buy-->
-  <section id="buy">
+  <section id="buy" role="none">
     <div class="container">
-      <div class="row buy-ow-row">
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0"><img src="./images/buy-ow.png" alt="buy-ow" width="300px"></div>
-      </div>
       <div class="row">
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
           <h3>Get Your Copy of Overwatch, Today!</h3>
           <p>Don't forget to sign up for our weekly newsletter</p>
+          <div>
+           <img src="./images/buy-ow.png" alt="buy-ow" width="50%">
+          </div>
         </div>
+
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <span id="emailHelp">We'll never share your email with anyone else.</span>
-            </div>
-            <button type="submit" class="btn footer-btn btn-outline-primary">Submit</button>
-          </form>
-        </div>
+          <div class="form-group">
+            <h3>Subscribe to our email list</h3>
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xzbyzwzg" method="post">
+              <fieldset id="fs-frm-inputs">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required="" class="form-control">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" class="form-control">
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              </fieldset>
+              <br>
+              <button type="submit" class="btn footer-btn btn-outline-primary">Subscribe</button>
+            </form>
+          </div>
       </div>
     </div>
   </section>
+  </main>
 
   <!--Footer-->
-  <section id="footer">
+  <section id="footer" role="contentinfo">
     <footer class="bg-light text-center text-lg-start">
       <div class="container p-4">
-        <div class="row punch-kid-row">
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0"><img src="images/that-punch-kid.png" alt="that-punch-kid" width="200px"></div>
-        </div>
         <div class="row">
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Play OverWatch</h5>
+            <h4 class="text-uppercase">Play OverWatch</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias.
+              ©2021 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED. All images within this demo website come from the internet.
             </p>
+            <div class="scene">
+              <div class="flipcard">
+                <div class="card_face card_front"><img src="images/Overwatch_circle_logo.svg"  width= "80px" alt="overwatch logo"></div>
+                <div class="card_face card_back"><img src="images/blizzard_logo.png"  width= "80px" alt="blizzard logo"></div>
+              </div>
+            </div>
           </div>
+
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h4 class="text-uppercase">Footer Links</h4>
+            <h4 class="text-uppercase">Quick Links</h4>
             <ul class="list-unstyled mb-0">
               <li>
-                <p>Add Link Later</p>
-                <p>Add Link Later</p>
-                <p>Add Link Later</p>
+                <a href="index.html"><p>Home</p></a>
+                <a href="heroes.html"><p>Heroes</p></a>
+                <a href="news.html"><p>News</p></a>
+                <a href="ow-league.html"><p>OW League</p></a>
               </li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-0">Footer Links</h5>
+            <h4 class="text-uppercase mb-0">Learn More</h4>
             <ul class="list-unstyled mb-0">
               <li>
-                <p>Add Link Later</p>
-                <p>Add Link Later</p>
-                <p>Add Link Later</p>
+              <a href="https://playoverwatch.com/"><p>Overwatch official Website</p></a>
+              <a href="https://www.blizzard.com/en-sg/"><p>Blizzard</p></a>
               </li>
             </ul>
           </div>
@@ -210,12 +222,11 @@
     <footer class="bg-dark text-center text-lg-start">
     <!-- Copyright -->
     <div class="text-center p-3 copyright-row bg-dark">
-      <span>© 2021 Copyright: </span><a class="text-light" href="">Blizzard OverWatch</a>
+      <span>© 2021 Copyright: </span><a class="text-light" href="">Blizzard Overwatch</a>
     </div>
     </footer>
   </section>
 </main>
-
 
 <!--Javascript-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
